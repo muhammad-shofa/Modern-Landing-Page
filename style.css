@@ -1,0 +1,445 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  background-color: #1a202c;
+  font-family: system-ui, sans-serif;
+}
+
+.container {
+  width: auto;
+  height: 4000px;
+  color: #fff;
+  margin: auto;
+  padding: 0 20px;
+  /* border: 1px solid red; */
+}
+
+/* Awal navbar */
+
+.judul {
+  line-height: 80px;
+  font-weight: 600;
+  margin-left: 20px;
+  color: #fff;
+}
+
+#check {
+  display: none;
+}
+
+nav .bar {
+  color: white;
+  display: none;
+}
+
+nav {
+  background-color: #1a202c;
+  height: 80px;
+  width: 100%;
+  align-items: center;
+  position: fixed;
+  box-sizing: border-box;
+  z-index: 2;
+  /* padding-right: 20px; */
+  /* border: 2px solid blue; */
+}
+
+nav i {
+  float: right;
+  display: none;
+  line-height: 80px;
+  margin-right: 20px;
+}
+
+nav ul {
+  float: right;
+  padding-right: 20px;
+}
+
+nav ul li {
+  line-height: 80px;
+  display: inline;
+  margin: 0 5px;
+}
+
+nav ul #active {
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 30px;
+  background-image: linear-gradient(to right, #e74380, #a938b1, #6e2ea6);
+  border: none;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  border-bottom: 3px solid white;
+  transition: all;
+  transition-duration: 0.1s;
+}
+
+/* Akhir navbar */
+
+/* Awal content */
+
+.content {
+  width: 920px;
+  margin: auto;
+  padding: 0;
+  /* border: 2px solid blue; */
+}
+
+/* .landing {} */
+
+.landing-h1 {
+  color: #fff;
+  padding-top: 160px;
+}
+
+.landing-p {
+  color: #fff;
+  margin-top: 80px;
+  font-weight: 600;
+}
+
+.landing-btn1 {
+  margin-top: 40px;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #6e2ea6;
+  border-radius: 50px;
+  background-color: #1a202c;
+}
+
+.landing-btn2 {
+  margin-top: 40px;
+  padding: 10px;
+  margin-left: 10px;
+  color: #fff;
+  border: 2px solid #6e2ea6;
+  border-radius: 50px;
+  background-color: #1a202c;
+}
+
+/* Awal About */
+
+.about {
+  padding-top: 5rem;
+}
+
+.about-h2 {
+  color: #fff;
+  padding-bottom: 80px;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #6e2ea6;
+  text-underline-offset: 20px;
+}
+
+.about-isi {
+  display: flex;
+}
+
+.about img {
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.about-text {
+  padding-left: 20px;
+}
+
+.about-h2-who {
+  color: #fff;
+}
+
+.about-text p {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.about-text button {
+  padding: 10px;
+  color: #fff;
+  font-weight: 600;
+  background-image: linear-gradient(to right, #e74380, #a938b1, #6e2ea6);
+  border: none;
+  border-radius: 5px;
+}
+
+.about-text button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Akhir About */
+
+/* Awal Services */
+
+.services {
+  padding-top: 5rem;
+}
+
+.services-h2 {
+  color: #fff;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #6e2ea6;
+  text-underline-offset: 20px;
+}
+
+.services-isi {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  /* margin: 20px; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.services-card {
+  width: 200px;
+  height: 200px;
+  /* margin: auto; */
+  /* untuk card agar lebih smooth */
+  background-image: linear-gradient(to right, #e74380, #a938b1, #6e2ea6);
+  text-align: center;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.services-card h3 {
+  position: relative;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+/* Akhir Services */
+
+/* Awal Blog */
+
+.blog {
+  padding-top: 5rem;
+}
+
+.blog-h2 {
+  color: #fff;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #6e2ea6;
+  text-underline-offset: 20px;
+}
+
+.blog-isi {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  gap: 2rem;
+}
+
+.blog-card {
+  width: 400px;
+  height: auto;
+  padding: 10px 10px 10px 10px;
+  /* dengan padding atau tanpa padding */
+  border-radius: 12px;
+  background-image: linear-gradient(to right, #6e2ea6, #a938b1, #e74380);
+}
+
+/* zoom effect */
+
+.zoom-effect {
+  position: relative;
+  width: 100%;
+  height: 290px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.kotak {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+
+.blog-read-more {
+  /* display: none; */
+  margin-top: 135px;
+  margin-left: 135px;
+  position: absolute;
+}
+
+.zoom-effect:hover .kotak .blog-read-more {
+  display: contents;
+}
+
+/* ini img */
+.blog-card-img {
+  width: 100%;
+  height: 100%;
+}
+
+.kotak .blog-card-img {
+  webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  width: 100%;
+}
+
+.zoom-effect:hover .kotak .blog-card-img {
+  webkit-transform: scale(1.08);
+  transform: scale(1.08);
+  opacity: 0.3;
+}
+
+/* zoom effect end */
+
+.blog-deskripsi {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.blog-deskripsi h3 {
+  padding-top: 10px;
+}
+
+.blog-date {
+  color: rgb(0, 255, 51);
+}
+
+/* Akhir Blog */
+
+/* Awal Contact */
+
+.contact {
+  padding-top: 5rem;
+}
+
+.contact-h2 {
+  color: #fff;
+  padding-bottom: 20px;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #6e2ea6;
+  text-underline-offset: 20px;
+}
+
+.contact-isi {
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+/* Akhir Contact */
+
+/* Akhir Content*/
+
+/* Responsive for hp */
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: auto;
+    /* padding-left: 20px; */
+  }
+
+  .content {
+    padding: 0px 20px 0px 20px;
+    width: auto;
+  }
+
+  /* Awal Navbar */
+
+  nav {
+    height: 80px;
+    width: 100%;
+  }
+
+  nav .bar {
+    display: flex;
+    cursor: pointer;
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+
+  #check:checked ~ ul {
+    width: 100px;
+    height: 400px;
+    display: block;
+    margin-right: -20px;
+    margin-top: 80px;
+    transition: all;
+    transition-duration: 0.2s;
+    z-index: 1;
+  }
+
+  nav ul {
+    margin-top: -500px;
+    margin-right: -20px;
+    z-index: 1;
+  }
+
+  nav ul li {
+    float: right;
+  }
+
+  /* Akhir Navbar */
+
+  /* Awal Landing */
+
+  /* .landing {} */
+
+  /* Akhir Landing */
+
+  /* Awal About */
+
+  /* .about {} */
+
+  .about img {
+    width: auto;
+    height: 200px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .about-isi {
+    display: block;
+  }
+
+  /* Akhir About */
+
+  /* Awal Services */
+
+  /* .services {} */
+
+  /* Akhir Services */
+}
