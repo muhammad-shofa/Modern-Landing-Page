@@ -288,15 +288,20 @@ nav ul li a:hover {
   background-color: black;
 }
 
-.blog-read-more {
-  /* display: none; */
-  margin-top: 135px;
-  margin-left: 135px;
+.blog-read-more a {
+  margin-top: 125px;
+  margin-left: 125px;
   position: absolute;
+  opacity: 0;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  border: 2px solid white;
 }
 
-.zoom-effect:hover .kotak .blog-read-more {
-  display: contents;
+.zoom-effect:hover .kotak .blog-read-more a {
+  /* display: content; */
+  opacity: 1;
 }
 
 /* ini img */
